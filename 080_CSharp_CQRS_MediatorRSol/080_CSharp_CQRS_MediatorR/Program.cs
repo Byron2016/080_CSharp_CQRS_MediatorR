@@ -1,4 +1,7 @@
 
+using _080_CSharp_CQRS_MediatorR.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace _080_CSharp_CQRS_MediatorR
 {
     public class Program
@@ -10,6 +13,9 @@ namespace _080_CSharp_CQRS_MediatorR
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddDbContext<_080_CSharp_CQRS_MediatorRDBContext>(options => options.UseInMemoryDatabase("VideoGameDB"));
+
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

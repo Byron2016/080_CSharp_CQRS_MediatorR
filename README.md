@@ -67,6 +67,15 @@
 			- Do not use top-level statements
 			- Use controllers 
 			
+- Modified project to have a Player API with a InMemory EF.
+	- AoneCoding: Implement InMemory Database | Asp.Net Core 8.0 | moq in-memory database | Use InMemory DB | EF Core
+		- https://www.youtube.com/watch?v=MTKrJTgdcaI
+			- Packages
+				- Microsoft.EntityFrameworkCore.InMemory 
+			- Steps to configure In Memory Database in Unit Test 
+				- Create xunit Project for Unit Test and test with real time data in memory 
+				- Install the package 
+				- Create a class file for the controller and initialize the In Memory Database and insert some sample values in your entities which you are going to save in memory.
 ---
 
 [⏪(Back to top)](#table-of-contents)
